@@ -1,0 +1,100 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: url('./tudo.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.todo-container {
+  width: 90%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+input[type="text"] {
+  margin-top: 10px;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: black;
+  font-size: 18px; /* Increased font size for input */
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5); /* Enlarges the checkbox */
+  margin-right: 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: black;
+  font-size: 18px; /* Increased font size for buttons */
+  font-weight: bold; /* Bold text for buttons */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  color: black;
+}
+
+li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  font-size: 18px; /* Increased font size for list items */
+  font-weight: bold; /* Bold text for list items */
+}
+
+hr {
+  border: 1px solid black;
+}
+
+/* Additional spacing for buttons in list items */
+li button {
+  margin-left: 10px;
+}
+
+@media (max-width: 480px) {
+  .todo-container {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  button {
+    font-size: 16px; /* Slightly smaller button text for smaller screens */
+  }
+
+  li {
+    font-size: 16px; /* Slightly smaller text for list items on smaller screens */
+  }
+
+  input[type="text"] {
+    font-size: 16px; /* Slightly smaller input text for smaller screens */
+  }
+}
